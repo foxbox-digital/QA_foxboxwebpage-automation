@@ -2,18 +2,18 @@ const { expect } = require('@playwright/test');
 const { test } = require('../fixtures/fixtures');
 
 test.describe('SC28 - Culture Page', () => {
-  test('SC28-TC01 - Hero heading "Move Purposely." is visible', async ({ culturePage }) => {
+  test('SC28-TC01 - Hero heading "Get the right people in the room." is visible', async ({ culturePage }) => {
     await expect(culturePage.heroHeading).toBeVisible();
   });
 
-  test('SC28-TC02 - "Move Purposely." section heading is visible', async ({ culturePage }) => {
-    await culturePage.scrollToElement(culturePage.movePurposelyHeading);
-    await expect(culturePage.movePurposelyHeading).toBeVisible();
+  test('SC28-TC02 - "Remote on purpose" section heading is visible', async ({ culturePage }) => {
+    await culturePage.scrollToElement(culturePage.remoteOnPurposeHeading);
+    await expect(culturePage.remoteOnPurposeHeading).toBeVisible();
   });
 
-  test('SC28-TC03 - "The Foxbox Way" section heading is visible', async ({ culturePage }) => {
-    await culturePage.scrollToElement(culturePage.foxboxWayHeading);
-    await expect(culturePage.foxboxWayHeading).toBeVisible();
+  test('SC28-TC03 - "Own the problem, not the ticket." section heading is visible', async ({ culturePage }) => {
+    await culturePage.scrollToElement(culturePage.ownTheProblemHeading);
+    await expect(culturePage.ownTheProblemHeading).toBeVisible();
   });
 
   test('SC28-TC04 - "We are hiring!" section is not present (FOX2-56)', async ({ culturePage }) => {
