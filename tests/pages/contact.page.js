@@ -4,8 +4,10 @@ class ContactPage extends BasePage {
   constructor(page) {
     super(page);
 
-    // Cookie consent banner
-    this.cookieAcceptAllBtn    = page.getByRole('button', { name: 'Accept all' });
+    // Cookie consent banner — redesigned (2026-09): initial banner shows "Manage preferences" | "Got it";
+    // "Got it" accepts all; "Manage preferences" opens a panel with granular options.
+    this.cookieGotItBtn        = page.getByRole('button', { name: 'Got it' });
+    this.cookieManagePrefBtn   = page.getByRole('button', { name: 'Manage preferences' });
     this.cookieEssentialOnlyBtn = page.getByRole('button', { name: 'Essential only' });
 
     // Page content
@@ -40,12 +42,14 @@ class ContactPage extends BasePage {
   }
 
   async acceptAllCookies() {
-    await this.cookieAcceptAllBtn.waitFor({ state: 'visible' });
-    await this.cookieAcceptAllBtn.click();
+    await this.cookieGotItBtn.waitFor({ state: 'visible' });
+    await this.cookieGotItBtn.click();
     await this.formEmail.waitFor({ state: 'visible', timeout: 10000 });
   }
 
   async acceptEssentialCookies() {
+    await this.cookieManagePrefBtn.waitFor({ state: 'visible' });
+    await this.cookieManagePrefBtn.click();
     await this.cookieEssentialOnlyBtn.waitFor({ state: 'visible' });
     await this.cookieEssentialOnlyBtn.click();
     await this.formEmail.waitFor({ state: 'visible', timeout: 10000 });
