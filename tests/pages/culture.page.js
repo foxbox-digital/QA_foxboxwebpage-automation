@@ -5,11 +5,11 @@ class CulturePage extends BasePage {
     super(page);
 
     // Hero section
-    this.heroHeading = page.getByText('Move Purposely.');
+    this.heroHeading = page.getByText('Get the right people in the room.');
 
-    // Section headings
-    this.movePurposelyHeading = page.getByText('Move Purposely.');
-    this.foxboxWayHeading = page.getByText('The Foxbox Way');
+    // Section headings (redesigned ~Sep 2026: "Move Purposely."/"The Foxbox Way" → new pillars)
+    this.remoteOnPurposeHeading = page.getByText('Remote on purpose');
+    this.ownTheProblemHeading = page.getByText('Own the problem, not the ticket.');
     this.whatWeBelieveHeading = page.getByText('What We Believe');
 
     // Core beliefs
