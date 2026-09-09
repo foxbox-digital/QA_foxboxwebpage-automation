@@ -14,7 +14,7 @@ class AiAssessmentPage extends BasePage {
     this.takeAssessmentButton = page.getByRole('button', { name: /take the self-assessment/i });
     this.youllGetLabel = page.getByText(/you.ll get/i);
     this.timingInfo = page.getByText(/under 3 minutes/i);
-    this.cookieAcceptAll = page.getByRole('button', { name: /accept all/i });
+    this.cookieAcceptAll = page.getByRole('button', { name: /got it/i });
 
     // === QUESTIONNAIRE ===
     this.navQuestionProgress = page.locator('nav').getByText(/Question \d+ of 9/);
