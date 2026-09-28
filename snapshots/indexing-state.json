@@ -19,8 +19,10 @@
   },
   "stormwind": {
     "origin": "https://stormwindstudios.com",
-    "robotsError": "fetch failed",
-    "rootError": "fetch failed",
+    "robotsStatus": 200,
+    "robotsBody": "User-Agent: *\nAllow: /\nDisallow: /api/\nDisallow: /503\nDisallow: /sentry-test\nDisallow: /_next/\nDisallow: /monitoring\n\nSitemap: https://stormwindstudios.com/sitemap.xml",
+    "rootStatus": 200,
+    "xRobotsTag": null,
     "canonical": "https://stormwindstudios.com"
   },
   "signallabs": {
