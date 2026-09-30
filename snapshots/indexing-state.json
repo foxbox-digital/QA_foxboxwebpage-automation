@@ -28,7 +28,7 @@
   "signallabs": {
     "origin": "https://www.signallabs.ai",
     "robotsStatus": 200,
-    "robotsBody": "User-Agent: *\nAllow: /\nDisallow: /studio/\nDisallow: /api/\n\nSitemap: https://signallabs.ai/sitemap.xml",
+    "robotsBody": "User-Agent: *\nAllow: /\nDisallow: /studio/\nDisallow: /api/\n\nSitemap: https://www.signallabs.ai/sitemap.xml",
     "rootStatus": 200,
     "xRobotsTag": null,
     "canonical": "https://www.signallabs.ai"
