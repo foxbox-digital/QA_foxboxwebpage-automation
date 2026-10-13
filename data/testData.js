@@ -71,8 +71,8 @@ const testData = {
   },
 
   about: {
-    heroHeading: 'Foxbox creates digital products that become indispensable for your business and your customers.',
-    heroSubheading: 'Staples for them. Growth engines for you.',
+    heroHeading: 'Aim for indispensable.',
+    introStatement: 'Foxbox is a digital product agency with deep technical expertise and a clearly defined purpose',
     team: ['Rob Volk', 'Elliott Torres', 'Barrett Willich'],
   },
 

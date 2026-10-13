@@ -7,12 +7,15 @@ test.describe('SC17 - About Page', () => {
     await expect(aboutPage.whoWeAreHeading).toBeVisible();
   });
 
-  test('SC17-TC02 - Hero heading is visible', async ({ aboutPage }) => {
+  test('SC17-TC02 - Hero heading "Aim for indispensable." is visible', async ({ aboutPage }) => {
     await expect(aboutPage.heroHeading).toBeVisible();
   });
 
-  test('SC17-TC03 - Hero subheading is visible', async ({ aboutPage }) => {
-    await expect(aboutPage.heroSubheading).toBeVisible();
+  // The hero subheading was removed in the Sep 2026 redesign; the "Who We Are"
+  // intro statement is the lead copy that replaced it.
+  test('SC17-TC03 - "Who We Are" intro statement is visible', async ({ aboutPage }) => {
+    await aboutPage.scrollToElement(aboutPage.introStatement);
+    await expect(aboutPage.introStatement).toBeVisible();
   });
 
   test('SC17-TC04 - "Led by Experience" heading is visible', async ({ aboutPage }) => {

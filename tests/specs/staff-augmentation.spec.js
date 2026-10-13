@@ -25,7 +25,7 @@ test.describe('SC26 - Staff Augmentation Page', () => {
     await expect(staffAugmentationPage.proactiveOversightHeading).toBeVisible();
   });
 
-  test('SC26-TC06 - "Our Tech Stack" section heading is visible', async ({ staffAugmentationPage }) => {
+  test('SC26-TC06 - "Tech Stack" section heading is visible', async ({ staffAugmentationPage }) => {
     await staffAugmentationPage.scrollToElement(staffAugmentationPage.techStackHeading);
     await expect(staffAugmentationPage.techStackHeading).toBeVisible();
   });
