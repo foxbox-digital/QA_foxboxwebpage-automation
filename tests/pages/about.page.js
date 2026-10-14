@@ -4,11 +4,14 @@ class AboutPage extends BasePage {
   constructor(page) {
     super(page);
 
-    // Hero section
-    this.heroHeading = page.getByText(
-      'Foxbox creates digital products that become indispensable for your business and your customers.'
+    // Hero section — redesigned ~Sep 2026: the hero <h1> is now "Aim for indispensable."
+    // and the hero subheading ("Staples for them. Growth engines for you.") was removed
+    // (its <p> renders empty). Pinned to level 1 because the same phrase also closes the
+    // "Who We Are" copy. The intro statement under "Who We Are" is the page's lead copy now.
+    this.heroHeading = page.getByRole('heading', { name: /^Aim for indispensable\.?$/i, level: 1 });
+    this.introStatement = page.getByText(
+      'Foxbox is a digital product agency with deep technical expertise and a clearly defined purpose'
     );
-    this.heroSubheading = page.getByText('Staples for them. Growth engines for you.');
 
     // Section headings
     this.whoWeAreHeading = page.getByText('WHO WE ARE');

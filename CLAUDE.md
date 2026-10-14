@@ -93,7 +93,7 @@ Test IDs follow `SC<suite>-TC<case>` format. Use `--grep "SC12"` to run a whole 
 - SC41: Nav case-study link hrefs (FOX2-129) — asserts Our Work + See All Case Studies point to `/case-studies` and the K Health/Versapay/Anthem featured links point under `/case-studies/*`
 
 **`tests/specs/about.spec.js`** — SC17:
-- SC17: About page (WHO WE ARE heading, hero heading/subheading, leadership team cards, WHY FOXBOX? section, CHAT WITH US CTA, What We Believe, newsletter)
+- SC17: About page (WHO WE ARE heading, hero heading, Who We Are intro statement, leadership team cards, WHY FOXBOX? section, CHAT WITH US CTA, What We Believe, newsletter)
 
 **`tests/specs/blog.spec.js`** — SC18:
 - SC18: Blog page (Inside the Box heading, subheading, article count ≥ 3, first/second/third article title, Read More URL pattern, clicking first article navigates, pagination Next link, newsletter)

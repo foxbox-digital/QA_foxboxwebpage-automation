@@ -12,7 +12,8 @@ class StaffAugmentationPage extends BasePage {
     this.crossFunctionalHeading = page.getByText('Cross-Functional Talent');
     this.scalableDeliveryHeading = page.getByText('Scalable Delivery');
     this.proactiveOversightHeading = page.getByText('Proactive Oversight');
-    this.techStackHeading = page.getByText('Our Tech Stack');
+    // Heading relabelled "Our Tech Stack" -> "Tech Stack" (~Oct 2026)
+    this.techStackHeading = page.getByRole('heading', { name: 'Tech Stack', exact: true });
     this.wantToLearnMoreHeading = page.getByText('Want to learn more?');
 
     // Tech stack skill items (skillObject embedded via serviceObject) — FOX2-42

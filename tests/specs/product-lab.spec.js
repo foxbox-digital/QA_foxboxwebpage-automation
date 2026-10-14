@@ -31,9 +31,9 @@ test.describe('SC24 - Product Lab Page', () => {
     await expect(productLabPage.humanExpertiseHeading).toBeVisible();
   });
 
-  test('SC24-TC07 - "AI-NATIVE DEVELOPMENT" section heading is visible', async ({ productLabPage }) => {
-    await productLabPage.scrollToElement(productLabPage.aiNativeDevelopmentHeading);
-    await expect(productLabPage.aiNativeDevelopmentHeading).toBeVisible();
+  test('SC24-TC07 - "AGENTIC ENGINEERING" section heading is visible', async ({ productLabPage }) => {
+    await productLabPage.scrollToElement(productLabPage.agenticEngineeringHeading);
+    await expect(productLabPage.agenticEngineeringHeading).toBeVisible();
   });
 
   test('SC24-TC08 - "Ready to get building?" CTA heading is visible', async ({ productLabPage }) => {

@@ -13,7 +13,8 @@ class ProductLabPage extends BasePage {
     this.buildForFutureHeading = page.getByText('BUILD FOR THE FUTURE');
     this.calibratedMvpHeading = page.getByText('A PROPERLY CALIBRATED MVP');
     this.humanExpertiseHeading = page.getByText('HUMAN EXPERTISE');
-    this.aiNativeDevelopmentHeading = page.getByRole('heading', { name: /AI-NATIVE DEVELOPMENT/i });
+    // Section renamed "AI-Native Development" -> "Agentic Engineering" (~Oct 2026)
+    this.agenticEngineeringHeading = page.getByRole('heading', { name: /^Agentic Engineering$/i });
     this.aimIndispensableHeading = page.getByRole('heading', { name: /AIM FOR.*INDISPENSABLE/i });
     this.readyToBuildHeading = page.getByText('Ready to get building?');
 
